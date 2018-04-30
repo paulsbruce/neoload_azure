@@ -1,0 +1,63 @@
+<http-action actionType="1"
+    contentType="application/json; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="" path="/${AzureClientID}/oauth2/token"
+    postCharset="" postType="1" recordedResponseCode="200"
+    recordedResponseTime="1258" responseSize="1351"
+    serverUid="login.microsoftonline.com" slaProfileEnabled="false"
+    uid="8c7486f6-eabd-4dc9-bffd-714684c5e943" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_cust_9990c7e0-e2b4-4bde-8e62-7683e73fe8e0</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_cust_8965197b-c7f9-4fde-9c56-bbf626d2d249.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.token_type" matchNumber="1" matchNumberAdv="1"
+        matchNumberSimple="1" name="Azure_tokenType"
+        refererUid="8965197b-c7f9-4fde-9c56-bbf626d2d249" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="b263fd9f-a691-4ec0-9bad-7e2dfd981aed" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.access_token" matchNumber="1" matchNumberAdv="1"
+        matchNumberSimple="1" name="Azure_accessToken"
+        refererUid="8965197b-c7f9-4fde-9c56-bbf626d2d249" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="cbcac725-0f24-43cb-87bc-0002fece5fbe" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <parameter encodeName="true" encodeValue="true" name="grant_type"
+        recordRawValue="" separator="=" value="client_credentials" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="resource"
+        recordRawValue="" separator="="
+        value="https://management.core.windows.net/" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="client_id"
+        recordRawValue="" separator="=" value="${AzureApplicationID}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="client_secret"
+        recordRawValue="" separator="=" value="${AzureSecretKey}" valueMode="USE_VALUE"/>
+    <responseHeaders>HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/10.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+x-ms-request-id: 115a9c0b-b109-42ad-bd5e-1cab06486500
+P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Set-Cookie: esctx=AQABAAAAAADX8GCi6Js6SK82TsD2Pb7rVW_1WwDLyC-QaRn-slkessWtH9KOhkka4SBB6csNlqguz6XSU_mT6dCx6gRdtN0SgxS4q1W_DFzKko_naq7Z44wEXnHLeE-FjzUm01K3DDCVhPwFI02_63oAf_1FDk7nwC3abGID72jEZz_WQhMkjevX83YBvWEGTlo-XrWJ54QgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly
+Set-Cookie: x-ms-gateway-slice=020; path=/; secure; HttpOnly
+Set-Cookie: stsservicecookie=ests; path=/; secure; HttpOnly
+Date: Wed, 25 Apr 2018 16:21:41 GMT
+Content-Length: 1351</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

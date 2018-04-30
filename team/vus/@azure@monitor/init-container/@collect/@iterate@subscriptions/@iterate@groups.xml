@@ -1,0 +1,6 @@
+<loop-action loop="${Azure_resourceGroupNames_matchNr}"
+    name="IterateGroups" uid="78b031a1-66f9-40ad-8383-2954e8f3dacc">
+    <embedded-action>062d16ab-9be5-4754-a47f-64e9c6c805fe</embedded-action>
+    <embedded-action>b96edb04-682e-4275-b3b0-bf07d773d91c</embedded-action>
+    <embedded-action>6426ec72-be49-49e6-9abb-027c38dfc883</embedded-action>
+</loop-action>

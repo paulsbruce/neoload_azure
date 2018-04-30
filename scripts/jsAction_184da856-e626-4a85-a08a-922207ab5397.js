@@ -1,0 +1,1 @@
+﻿context.variableManager.setValue("NL_ReportGenerated",true);

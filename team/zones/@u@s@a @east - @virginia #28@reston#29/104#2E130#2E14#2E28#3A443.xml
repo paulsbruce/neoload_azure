@@ -1,0 +1,41 @@
+<lg-host cloudLoadGeneratorId="lg-1525097347395-4941"
+    cloudSessionId="1525097347395" hostname="104.130.14.28:443"
+    loadWeight="1" standalone="true" supportWANEmulation="true"
+    uid="a0051cc3-d561-4294-a760-de010ea21745" version="6.4.0;build=20180322-20">
+    <!--****** LG NETWORK INTERFACES ******-->
+    <lg-networkiface description="lo" enabled="false" isLoopBack="true" name="lo">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="localhost">
+            <ip value="127.0.0.1"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="0:0:0:0:0:0:0:1%lo">
+            <ip value="0:0:0:0:0:0:0:1%lo"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+    <lg-networkiface description="eth1" enabled="false"
+        isLoopBack="false" name="eth1">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="10.208.230.227">
+            <ip value="10.208.230.227"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:be76:4eff:fe20:9011%eth1">
+            <ip value="fe80:0:0:0:be76:4eff:fe20:9011%eth1"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+    <lg-networkiface description="eth0" enabled="false"
+        isLoopBack="false" name="eth0">
+        <!--****** LG ADDRESSES ******-->
+        <lg-address enabled="false" hostname="104.130.14.28">
+            <ip value="104.130.14.28"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="2001:4802:7802:104:be76:4eff:fe20:2176%eth0">
+            <ip value="2001:4802:7802:104:be76:4eff:fe20:2176%eth0"/>
+        </lg-address>
+        <lg-address enabled="false" hostname="fe80:0:0:0:be76:4eff:fe20:2176%eth0">
+            <ip value="fe80:0:0:0:be76:4eff:fe20:2176%eth0"/>
+        </lg-address>
+        <!--****** END LG ADDRESSES ******-->
+    </lg-networkiface>
+</lg-host>

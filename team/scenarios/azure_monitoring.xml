@@ -1,0 +1,257 @@
+<scenario postMonitoringTime="-1" preMonitoringTime="-1"
+    slaProfileEnabled="false" uid="azure_monitoring" virtualUsersStates="true">
+    <!--****** POPULATION POLICY ******-->
+    <population-policy name="AzureMonitor">
+        <duration-policy-entry iterations="1" time="1200" timeUnit="0" type="2"/>
+        <volume-policy-entry>
+            <constant-volume-policy iterationNumber="1" userNumber="1"/>
+        </volume-policy-entry>
+        <start-stop-policy-entry start-delay="0" start-type="0"
+            stop-delay="60000" stop-type="0"/>
+        <runtime-policy continueOnError="true" thinktimePolicy="0"
+            thinktimeValue="5000" vuStartDelay="0" vuStartMode="0"/>
+        <!--****** POPULATION LG HOSTS ******-->
+        <lg-hosts>
+            <lg-host-entry>$zoneID=Default zone;$lgID=localhost:7100</lg-host-entry>
+        </lg-hosts>
+    </population-policy>
+    <!--****** POPULATION POLICY ******-->
+    <population-policy name="AzureLoad">
+        <duration-policy-entry iterations="1" time="1200" timeUnit="0" type="2"/>
+        <volume-policy-entry>
+            <rampup-volume-policy delayIncrement="2.0"
+                delayTypeIncrement="1" initialUserNumber="2"
+                iterationNumber="1" maxUserNumber="999" userIncrement="2"/>
+        </volume-policy-entry>
+        <start-stop-policy-entry start-delay="0" start-type="0"
+            stop-delay="60000" stop-type="0"/>
+        <runtime-policy continueOnError="true" thinktimePolicy="0"
+            thinktimeValue="5000" vuStartDelay="0" vuStartMode="0"/>
+        <!--****** POPULATION LG HOSTS ******-->
+        <lg-hosts>
+            <lg-host-entry>$zoneID=USA Central - Iowa (West Des Moines);$lgID=40.69.170.124:443</lg-host-entry>
+            <lg-host-entry>$zoneID=USA East - Virginia (Reston);$lgID=104.130.14.28:443</lg-host-entry>
+            <lg-host-entry>$zoneID=USA West - Arizona (Phoenix);$lgID=13.78.130.200:443</lg-host-entry>
+        </lg-hosts>
+    </population-policy>
+    <dashboards defaultDashboardUid="Graph board"/>
+    <!--****** DASHBOARDS  ******-->
+    <charts-model-description name="Graph board">
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Controller/User Load" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="UserLoad" monitoredHostName="NeoLoad"
+                scale="0.1" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+            <monitor-curve-description color="42,89,26"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="throughput" monitoredHostName="NeoLoad"
+                scale="1.0" selected="false"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+            <monitor-curve-description color="0,255,0"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="lgcpu.localhost:7100"
+                monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+            <action-curve-description
+                actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+                color="255,51,51" dashed="false" populationName=""
+                scale="0.1" selected="true"
+                statisticName="result.hit.rate" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="&lt;all requests> - Average duration" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+                color="153,153,0" dashed="false" populationName=""
+                scale="1.0" selected="true"
+                statisticName="result.average.duration" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="&lt;all requests> - Elements/s" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+                color="88,183,55" dashed="false" populationName=""
+                scale="1.0" selected="true"
+                statisticName="result.hit.rate" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Controller/Throughput" typeName="CLASSIC">
+            <monitor-curve-description color="191,0,189"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="throughput" monitoredHostName="NeoLoad"
+                scale="1.0" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="&lt;all requests> - Average duration" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+                color="153,153,0" dashed="false" populationName=""
+                scale="1.0" selected="true"
+                statisticName="result.average.duration" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/cpu_percent" typeName="CLASSIC">
+            <third-party-data-curve-description color="178,140,0"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/cpu_percent"
+                scale="100.0" selected="false" unit=""/>
+            <third-party-data-curve-description color="20,106,203"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/memory_percent"
+                scale="1.0" selected="false" unit=""/>
+            <third-party-data-curve-description color="88,183,55"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/serverlog_storage_percent"
+                scale="1.0" selected="false" unit=""/>
+            <third-party-data-curve-description color="200,0,0"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/storage_percent"
+                scale="1.0" selected="true" unit=""/>
+            <third-party-data-curve-description color="191,0,189"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/io_consumption_percent"
+                scale="1.0" selected="false" unit=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Azure/Free Trial/NeoLoadDemoGroup/ServicePlanbdde700c-b7e5/CpuPercentage" typeName="CLASSIC">
+            <third-party-data-curve-description color="178,140,0"
+                dashed="false"
+                path="Azure/Free Trial/NeoLoadDemoGroup/ServicePlanbdde700c-b7e5/CpuPercentage"
+                scale="1.0" selected="true" unit=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/active_connections" typeName="CLASSIC">
+            <third-party-data-curve-description color="178,140,0"
+                dashed="false"
+                path="Azure/Free Trial/neoloadwpdemo/neoloadwpdemo-mysqldbserver/active_connections"
+                scale="1.0" selected="true" unit=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="${Azure_ResourceID}/providers/microsoft.insights/metricdefinitions - Elements/s" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="a5b547b3-6197-4c9f-83ff-a9885f080d06"
+                color="88,183,55" dashed="false" populationName=""
+                scale="10.0" selected="false"
+                statisticName="result.hit.rate"
+                virtualUserUid="AzureMonitor" zoneName=""/>
+            <action-curve-description
+                actionUid="a5b547b3-6197-4c9f-83ff-a9885f080d06"
+                color="153,153,0" dashed="false" populationName=""
+                scale="10.0" selected="true"
+                statisticName="result.average.duration"
+                virtualUserUid="AzureMonitor" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="${Azure_ResourceID}/providers/microsoft.insights/metrics - Average duration" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="9e9ae02b-d1ae-45b1-9b69-52b4645ab811"
+                color="153,153,0" dashed="false" populationName=""
+                scale="1.0" selected="false"
+                statisticName="result.average.duration"
+                virtualUserUid="AzureMonitor" zoneName=""/>
+            <action-curve-description
+                actionUid="9e9ae02b-d1ae-45b1-9b69-52b4645ab811"
+                color="88,183,55" dashed="false" populationName=""
+                scale="1.0" selected="true"
+                statisticName="result.hit.rate"
+                virtualUserUid="AzureMonitor" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="store_external_data_entry - Elements/s" typeName="CLASSIC">
+            <action-curve-description
+                actionUid="d0a6047f-b3be-469c-98dd-565a88bff223"
+                color="88,183,55" dashed="false" populationName=""
+                scale="1.0" selected="true"
+                statisticName="result.hit.rate"
+                virtualUserUid="AzureMonitor" zoneName=""/>
+        </chart-description>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+        <empty-chart-description/>
+    </charts-model-description>
+    <!--****** END DASHBOARDS  ******-->
+    <!--****** START DATA FILTERS  ******-->
+    <!--****** END DATA FILTERS  ******-->
+    <!--****** START RENDEZ-VOUS POLICIES  ******-->
+    <!--****** END RENDEZ-VOUS POLICIES  ******-->
+    <!--****** START DEBUG POLICY ******-->
+    <debug-policy mode="0"/>
+    <!--****** END DEBUG POLICY ******-->
+    <!--****** START VU STATES ******-->
+    <!--****** END VU STATES ******-->
+    <request-path-exclusion-filter isEnabled="false">
+        <regexps>
+            <regexp>.*\.jpg</regexp>
+            <regexp>.*\.jpeg</regexp>
+            <regexp>.*\.gif</regexp>
+            <regexp>.*\.png</regexp>
+            <regexp>.*\.bmp</regexp>
+            <regexp>.*\.css</regexp>
+            <regexp>.*\.js</regexp>
+            <regexp>.*\.swf</regexp>
+            <regexp>.*\.ico</regexp>
+            <regexp>.*\.jar</regexp>
+            <regexp>.*\.class</regexp>
+            <regexp>.*\.properties</regexp>
+        </regexps>
+    </request-path-exclusion-filter>
+</scenario>

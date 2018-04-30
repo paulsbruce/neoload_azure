@@ -1,0 +1,46 @@
+<http-action actionType="1"
+    contentType="application/json; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/subscriptions/{subscriptionId}/resourcegroups"
+    path="/subscriptions/${Azure_currentSubscriptionId}/resourceGroups/${Azure_currentResourceGroupName}/resources"
+    postCharset="" postType="1" recordedResponseCode="200"
+    recordedResponseTime="116" responseSize="1144"
+    serverUid="management.azure.com" slaProfileEnabled="false"
+    uid="b96edb04-682e-4275-b3b0-bf07d773d91c" useKeepAlive="true">
+    <responsePageFileDescription>recorded-responses/res_cust_7a1409d0-87e1-46b9-a28a-4ffb5868574d</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_cust_b97a0b83-27ac-4a46-a874-f06d3b29683e.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.value[?(@.type!='microsoft.insights/components')].id"
+        matchNumber="-1" matchNumberAdv="1" matchNumberSimple="-1"
+        name="Azure_resourceIds"
+        refererUid="b97a0b83-27ac-4a46-a874-f06d3b29683e" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="9393e5c9-3616-46bc-9dbb-06f596a05d04" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <parameter encodeName="true" encodeValue="true" name="api-version"
+        recordRawValue="2018-02-01" separator="=" value="2018-02-01" valueMode="USE_VALUE"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Authorization" value="${Azure_tokenType} ${Azure_accessToken}"/>
+    <responseHeaders>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+x-ms-ratelimit-remaining-subscription-reads: 14982
+x-ms-request-id: 97817e8b-dd1b-4150-890c-22a33f0dab0c
+x-ms-correlation-request-id: 97817e8b-dd1b-4150-890c-22a33f0dab0c
+x-ms-routing-request-id: FRANCECENTRAL:20180426T213039Z:97817e8b-dd1b-4150-890c-22a33f0dab0c
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Date: Thu, 26 Apr 2018 21:30:38 GMT
+Content-Length: 1144</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

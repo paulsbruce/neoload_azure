@@ -1,0 +1,6 @@
+<zone cloudProvider="Microsoft Azure" dnsOverrideEnabled="false"
+    latitude="33.448376" longitude="-112.074036" proxyType="NO_PROXY"
+    proxyTypeLg="COMMON" uid="USA West - Arizona (Phoenix)">
+    <description>USA West - Arizona (Phoenix)</description>
+    <embedded-action>efded0b9-27b4-43fd-8d10-cdf373213556</embedded-action>
+</zone>

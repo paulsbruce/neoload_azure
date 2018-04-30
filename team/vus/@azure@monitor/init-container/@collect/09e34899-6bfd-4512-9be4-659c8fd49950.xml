@@ -1,0 +1,58 @@
+<http-action actionType="1"
+    contentType="application/json; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/subscriptions" path="/subscriptions"
+    postCharset="" postType="1" recordedResponseCode="200"
+    recordedResponseTime="912" responseSize="328"
+    serverUid="management.azure.com" slaProfileEnabled="false"
+    uid="09e34899-6bfd-4512-9be4-659c8fd49950" useKeepAlive="true">
+    <responsePageFileDescription>recorded-responses/res_cust_8fb7c553-5273-46a7-b5be-e6e865e7e703</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_cust_7286117d-d19d-40b6-9920-5eeb08c2b8d8.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.value[?(@.state=='Enabled')].subscriptionId"
+        matchNumber="-1" matchNumberAdv="1" matchNumberSimple="-1"
+        name="Azure_SubscriptionIds"
+        refererUid="80de163b-f87f-4db3-8e46-d7f36e07ab58" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="90380da9-8a5c-4ff7-96a9-67449a69e47e" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.value[?(@.state=='Enabled')].displayName"
+        matchNumber="-1" matchNumberAdv="1" matchNumberSimple="-1"
+        name="Azure_SubscriptionNames"
+        refererUid="80de163b-f87f-4db3-8e46-d7f36e07ab58" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="0f3deb7d-9713-47d6-b2e4-338e3a4562bc" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <parameter encodeName="true" encodeValue="true" name="api-version"
+        recordRawValue="2016-06-01" separator="=" value="2016-06-01" valueMode="USE_VALUE"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Authorization" value="${Azure_tokenType} ${Azure_accessToken}"/>
+    <responseHeaders>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 328
+Content-Type: application/json; charset=utf-8
+Expires: -1
+x-ms-ratelimit-remaining-tenant-reads: 14999
+x-ms-request-id: 5f3871df-29a9-4dd6-ba01-90d5663a1cd1
+x-ms-correlation-request-id: 5f3871df-29a9-4dd6-ba01-90d5663a1cd1
+x-ms-routing-request-id: FRANCECENTRAL:20180426T204316Z:5f3871df-29a9-4dd6-ba01-90d5663a1cd1
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Date: Thu, 26 Apr 2018 20:43:16 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

@@ -1,0 +1,330 @@
+<http-page executeResourcesDynamically="false"
+    name="/2018/04/27/hello-world/" playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    slaProfileEnabled="false" thinkTime="8553"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="53927f5b-505c-48e9-b431-886d48c81d7c">
+    <embedded-action>509c2fab-5dce-44fe-ae95-436e55d72106</embedded-action>
+    <embedded-action>24fbdbf5-3c0f-45df-8302-782b9101b5a3</embedded-action>
+    <embedded-action>8cfc16e5-83e3-4d6b-a4ed-a483bcb00e51</embedded-action>
+    <embedded-action>a126fb19-00bd-4b42-ac0e-8cf0592ff8b4</embedded-action>
+    <embedded-action>26f63796-84ce-42a7-9eeb-0c12dbc19c50</embedded-action>
+    <embedded-action>ed1a53b4-aa77-4dfd-acdb-d0cd927ea8c3</embedded-action>
+    <embedded-action>2dff7dbd-acee-4c76-9a94-dd9d826e49e2</embedded-action>
+    <embedded-action>fb3a0503-9819-4122-9642-2456c3ec399b</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_d453af23-5343-4845-bb45-38877cb57880.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=UTF-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/2018/04/27/hello-world/"
+    path="/2018/04/27/hello-world/" postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200" responseSize="59730"
+    serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="509c2fab-5dce-44fe-ae95-436e55d72106" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_c61dd0c6-34c5-4860-b52a-c9ce85623dee.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_c61dd0c6-34c5-4860-b52a-c9ce85623dee.txt</requestContentFileDescription>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/sample-video/"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 25729&#xd;
+Content-Type: text/html; charset=UTF-8&#xd;
+Content-Encoding: gzip&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: PHP/7.0.28&#xd;
+X-Pingback: http://neoloadwpdemo.azurewebsites.net/xmlrpc.php&#xd;
+Link: &lt;http://neoloadwpdemo.azurewebsites.net/wp-json/&gt;; rel="https://api.w.org/"&#xd;
+Link: &lt;http://neoloadwpdemo.azurewebsites.net/?p=1&gt;; rel=shortlink&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:50 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css"
+    eTag="&quot;0837f2759ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/wp-content/themes/twentyseventeen/style.css"
+    path="/wp-content/themes/twentyseventeen/style.css" postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200" responseSize="83132"
+    serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="24fbdbf5-3c0f-45df-8302-782b9101b5a3" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_01cbee6e-16e3-441c-89dd-64bcdb27f3e6.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_01cbee6e-16e3-441c-89dd-64bcdb27f3e6.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="4.9.5" separator="=" value="4.9.5" valueMode="USE_VALUE"/>
+    <header name="Accept" value="text/css,*/*;q=0.1"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 21990&#xd;
+Content-Type: text/css&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:22 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "bc7d982759ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:50 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="application/x-javascript"
+    eTag="&quot;c4f7312759ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET"
+    name="/wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js"
+    path="/wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200"
+    refererUid="509c2fab-5dce-44fe-ae95-436e55d72106" responseSize="683"
+    serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="8cfc16e5-83e3-4d6b-a4ed-a483bcb00e51" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_ef4fb198-f657-48a5-ab4a-37b710e2f13e</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_ef4fb198-f657-48a5-ab4a-37b710e2f13e.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="1.0" separator="=" value="1.0" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 552&#xd;
+Content-Type: application/x-javascript&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:21 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "c4f7312759ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:50 GMT</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="6"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/x-javascript"
+    eTag="&quot;80ece62659ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET"
+    name="/wp-content/themes/twentyseventeen/assets/js/navigation.js"
+    path="/wp-content/themes/twentyseventeen/assets/js/navigation.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200"
+    refererUid="509c2fab-5dce-44fe-ae95-436e55d72106"
+    responseSize="3754" serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="a126fb19-00bd-4b42-ac0e-8cf0592ff8b4" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_db223a4d-1f1f-43fd-8e13-cf81713f2cf1</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_db223a4d-1f1f-43fd-8e13-cf81713f2cf1.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="1.0" separator="=" value="1.0" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 1450&#xd;
+Content-Type: application/x-javascript&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:21 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "da4f2d2759ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:50 GMT</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="7"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/x-javascript"
+    eTag="&quot;80ece62659ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET"
+    name="/wp-content/themes/twentyseventeen/assets/js/global.js"
+    path="/wp-content/themes/twentyseventeen/assets/js/global.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200"
+    refererUid="509c2fab-5dce-44fe-ae95-436e55d72106"
+    responseSize="7682" serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="26f63796-84ce-42a7-9eeb-0c12dbc19c50" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_edc3c4bc-04bc-4eca-aeb7-b53586893ac3</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_edc3c4bc-04bc-4eca-aeb7-b53586893ac3.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="1.0" separator="=" value="1.0" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 3125&#xd;
+Content-Type: application/x-javascript&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:21 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "2d47212759ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:51 GMT</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="8"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/x-javascript"
+    eTag="&quot;80ece62659ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET"
+    name="/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js"
+    path="/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200"
+    refererUid="509c2fab-5dce-44fe-ae95-436e55d72106"
+    responseSize="5836" serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="ed1a53b4-aa77-4dfd-acdb-d0cd927ea8c3" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_c37066d7-7aba-4c6c-b279-a8f3c9f1d751</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_c37066d7-7aba-4c6c-b279-a8f3c9f1d751.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="2.1.2" separator="=" value="2.1.2" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 2846&#xd;
+Content-Type: application/x-javascript&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:21 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "c10262759ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:51 GMT</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="9"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="application/x-javascript"
+    eTag="&quot;71e8e4dc55ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Fri, 27 Apr 2018 18:30:48 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/wp-includes/js/comment-reply.min.js"
+    path="/wp-includes/js/comment-reply.min.js" postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200"
+    refererUid="509c2fab-5dce-44fe-ae95-436e55d72106"
+    responseSize="1078" serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="2dff7dbd-acee-4c76-9a94-dd9d826e49e2" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_3243e733-8813-40df-987c-42b5e32443b8</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_3243e733-8813-40df-987c-42b5e32443b8.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="ver"
+        recordRawValue="4.9.5" separator="=" value="4.9.5" valueMode="USE_VALUE"/>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 786&#xd;
+Content-Type: application/x-javascript&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:30:48 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "71e8e4dc55ded31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:50 GMT</responseHeaders>
+    <record-html-infos extractorContent="" extractorOccurence="10"
+        extractorRegExp="false" htmlType="1"/>
+</http-action>
+<http-action actionType="1" contentType="image/jpeg"
+    eTag="&quot;5e6ff2659ded31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false" linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET"
+    name="/wp-content/themes/twentyseventeen/assets/images/header.jpg"
+    path="/wp-content/themes/twentyseventeen/assets/images/header.jpg"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@w@p@workflow/%resources%/recorded-artifacts/53927f5b-505c-48e9-b431-886d48c81d7c.zip"
+    recordedResponseCode="200" responseSize="0"
+    serverUid="neoloadwpdemo.azurewebsites.net"
+    slaProfileEnabled="false" uid="fb3a0503-9819-4122-9642-2456c3ec399b" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_fb3a0503-9819-4122-9642-2456c3ec399b</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_3b1d7603-c385-4367-a0e5-5675d0907912.txt</requestContentFileDescription>
+    <header name="Accept" value="*/*"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloadwpdemo.azurewebsites.net"/>
+    <header name="Referer" value="http://neoloadwpdemo.azurewebsites.net/2018/04/27/hello-world/"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 114854&#xd;
+Content-Type: image/jpeg&#xd;
+Last-Modified: Fri, 27 Apr 2018 18:54:21 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "5e6ff2659ded31:0"&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Date: Fri, 27 Apr 2018 18:56:51 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

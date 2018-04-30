@@ -1,0 +1,45 @@
+<http-page executeResourcesDynamically="false" name="/"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@azure@workflow/%resources%/recorded-artifacts/1cf3b37f-c81d-4bf5-8f44-db33883ad3e8.zip"
+    slaProfileEnabled="false" thinkTime="0"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="1cf3b37f-c81d-4bf5-8f44-db33883ad3e8">
+    <embedded-action>3247cec1-8a6c-4232-a69b-9a6d1517a4c3</embedded-action>
+    <screenshotFileDescription>recorded-screenshots/sc_fd783bbd-1c8b-415a-9e05-d44a3ca07e2c.jpg</screenshotFileDescription>
+</http-page>
+<http-action actionType="1" contentType="text/html"
+    eTag="&quot;aa36465298dcd31:0&quot;" extractorInjectPathPolicy="2"
+    extractorPathPolicy="1" followRedirects="false"
+    generatedByClient="false"
+    lastModified="Wed, 25 Apr 2018 13:21:29 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/" path="/" postType="1"
+    recordedArtifactZipFileName="team/vus/@azure@workflow/%resources%/recorded-artifacts/1cf3b37f-c81d-4bf5-8f44-db33883ad3e8.zip"
+    recordedResponseCode="200" responseSize="2526"
+    serverUid="neoloaddemo.azurewebsites.net" slaProfileEnabled="false"
+    uid="3247cec1-8a6c-4232-a69b-9a6d1517a4c3" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_76000e9d-4186-4527-bced-fadc72fa1479.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_76000e9d-4186-4527-bced-fadc72fa1479.txt</requestContentFileDescription>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"/>
+    <header name="Accept-Encoding" value="gzip, deflate, br"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="DNT" value="1"/>
+    <header name="Host" value="neoloaddemo.azurewebsites.net"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"/>
+    <responseHeaders>HTTP/1.1 200 OK&#xd;
+Content-Length: 1407&#xd;
+Content-Type: text/html&#xd;
+Content-Encoding: gzip&#xd;
+Last-Modified: Wed, 25 Apr 2018 13:21:29 GMT&#xd;
+Accept-Ranges: bytes&#xd;
+ETag: "aa36465298dcd31:0"&#xd;
+Vary: Accept-Encoding&#xd;
+Server: Microsoft-IIS/10.0&#xd;
+X-Powered-By: ASP.NET&#xd;
+Set-Cookie: ARRAffinity=0bb766064a191289a32068db30aa1aaaa5ead487f53415a948b12908d5e4f434;Path=/;HttpOnly;Domain=neoloaddemo.azurewebsites.net&#xd;
+Date: Wed, 25 Apr 2018 13:35:35 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

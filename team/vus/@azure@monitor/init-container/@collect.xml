@@ -1,0 +1,7 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="Collect" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="fae38288-2a44-4c11-84f7-3c29d8e2c07d" weightsEnabled="false">
+    <weighted-embedded-action uid="09e34899-6bfd-4512-9be4-659c8fd49950"/>
+    <weighted-embedded-action uid="0f160d0c-560b-4431-b430-569972e4f923"/>
+</basic-logical-action-container>

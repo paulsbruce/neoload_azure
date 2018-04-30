@@ -1,0 +1,62 @@
+<http-action actionType="1" contentType="application/json"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name=""
+    path="${Azure_ResourceID}/providers/microsoft.insights/metrics"
+    postCharset="" postType="1" recordedResponseCode="200"
+    recordedResponseTime="210" responseSize="2809"
+    serverUid="management.azure.com" slaProfileEnabled="false"
+    uid="9e9ae02b-d1ae-45b1-9b69-52b4645ab811" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_cust_615657bd-210f-425d-8a5d-e90a5972e9bb</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_cust_577dbdab-1d71-4e6b-bd34-70d5d78cd787.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.value[*].timeseries[0].data[0].average"
+        matchNumber="-1" matchNumberAdv="1" matchNumberSimple="-1"
+        name="Azure_theseExtractedValues"
+        refererUid="577dbdab-1d71-4e6b-bd34-70d5d78cd787" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="00121eae-4fb4-4b35-bd5c-c372630afd9e" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <parameter encodeName="false" encodeValue="false" name="api-version"
+        recordRawValue="" separator="=" value="2018-01-01" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="metricnames"
+        recordRawValue="" separator="=" value="${Azure_theseMetricsCsv}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="interval"
+        recordRawValue="" separator="=" value="PT1M" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="false" name="timespan"
+        recordRawValue="" separator="="
+        value="${AzureStartTime}/${AzureEndTime}" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="resultType"
+        recordRawValue="" separator="=" value="Data" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="aggregation"
+        recordRawValue="" separator="=" value="Average" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="top"
+        recordRawValue="" separator="=" value="1" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="orderby"
+        recordRawValue="" separator="=" value="Average desc" valueMode="USE_VALUE"/>
+    <header name="Authorization" value="${Azure_tokenType} ${Azure_accessToken}"/>
+    <responseHeaders>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Length: 2809
+Content-Type: application/json
+Vary: Accept-Encoding
+x-ms-ratelimit-remaining-subscription-reads: 14996
+__HandlingServerId__: shoeboxproxyprod_shoeboxproxyprod-red_MetricsMP_IN_11
+x-ms-request-id: {2985e4ec-66dd-4472-8b86-fa6d5777bc2c}
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+x-ms-correlation-request-id: 2985e4ec-66dd-4472-8b86-fa6d5777bc2c
+x-ms-routing-request-id: EASTUS:20180427T020158Z:2985e4ec-66dd-4472-8b86-fa6d5777bc2c
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Date: Fri, 27 Apr 2018 02:01:57 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

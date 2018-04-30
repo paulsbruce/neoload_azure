@@ -1,0 +1,20 @@
+<custom-action actionType="Store External Data Entry" isHit="false"
+    name="store_external_data_entry" uid="d0a6047f-b3be-469c-98dd-565a88bff223">
+    <description>This action stores a value in the External Data part of the results through the DataExchange API.
+
+Possible parameters are:
+- value: (required) the numerical value to store in the entry. Example: ${myVariable}.
+- path: (required) the string representing the list of nodes that contains the entry. Path separator is '|'.
+- unit: (optional) the unit of the entry.
+- url: (optional) the url of the entry.
+- code: (optional) the string code of the status associated to the entry.
+- message: (optional) the message of the status associated to the entry.
+- state: (optional) the state of the status associated to the entry. Possible values are PASS and FAIL.
+- DataExchangeAPIURL: (required) where the DataExchange server is located. Typically the NeoLoad controller. For example, http://localhost:7400/DataExchange/v1/Service.svc/.
+- DataExchangeAPIKey: (optional) identification key specified in NeoLoad.
+- locale: (optional) the locale used to parse the numerical value. Default are English then French.</description>
+    <custom-action-parameter name="value" type="TEXT" value="${Azure_thisMetricValue}"/>
+    <custom-action-parameter name="path" type="TEXT" value="Azure|${Azure_SubscriptionRef}|${Azure_ResourceGroup}|${Azure_ResourceName}|${Azure_thisMetricName}"/>
+    <custom-action-parameter name="DataExchangeAPIURL" type="TEXT" value="http://127.0.0.1:7400/DataExchange/v1/Service.svc/"/>
+    <responsePageFileDescription>recorded-responses/res_d0a6047f-b3be-469c-98dd-565a88bff223</responsePageFileDescription>
+</custom-action>

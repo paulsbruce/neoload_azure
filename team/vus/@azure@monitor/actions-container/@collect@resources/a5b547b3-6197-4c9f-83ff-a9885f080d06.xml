@@ -1,0 +1,47 @@
+<http-action actionType="1" contentType="application/json"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name=""
+    path="${Azure_ResourceID}/providers/microsoft.insights/metricdefinitions"
+    postCharset="" postType="1" recordedResponseCode="200"
+    recordedResponseTime="1119" responseSize="32508"
+    serverUid="management.azure.com" slaProfileEnabled="false"
+    uid="a5b547b3-6197-4c9f-83ff-a9885f080d06" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_cust_ddabe714-8d91-409a-a64f-2f0718abb2bd</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_cust_f149e30b-1fe9-4435-bb15-2dd510a86d94.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="0" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="4" extractTypeAdv="0" extractTypeSimple="4"
+        jsonpath="$.value[*].name.value" matchNumber="-1"
+        matchNumberAdv="1" matchNumberSimple="-1"
+        name="Azure_value_names"
+        refererUid="a497f588-5da5-43bd-8d32-f2fbb574c6c0" regExp="(.*)"
+        regExpAdv="" setDefaultValue="true" startsWithSimple=""
+        template="$1$" templateAdv="$1$"
+        uid="a739254e-d7a2-4887-aa71-a20f9caace3c" xpath="">
+        <variable-extractor-group extract="true" occurs="1" pattern="" type="4"/>
+    </variable-extractor>
+    <parameter encodeName="false" encodeValue="false" name="api-version"
+        recordRawValue="" separator="=" value="2018-01-01" valueMode="USE_VALUE"/>
+    <header name="Authorization" value="${Azure_tokenType} ${Azure_accessToken}"/>
+    <responseHeaders>HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Length: 32508
+Content-Type: application/json
+Vary: Accept-Encoding
+x-ms-ratelimit-remaining-subscription-reads: 14984
+__HandlingServerId__: shoeboxproxyprod_shoeboxproxyprod-red_MetricsMP_IN_7
+x-ms-request-id: {336b056e-8d76-471c-9ed1-f948f6a7f165}
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+x-ms-correlation-request-id: 336b056e-8d76-471c-9ed1-f948f6a7f165
+x-ms-routing-request-id: FRANCECENTRAL:20180426T163527Z:336b056e-8d76-471c-9ed1-f948f6a7f165
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Date: Thu, 26 Apr 2018 16:35:26 GMT</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

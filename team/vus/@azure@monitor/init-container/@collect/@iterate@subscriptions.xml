@@ -1,0 +1,6 @@
+<loop-action loop="${Azure_SubscriptionIds_matchNr}"
+    name="IterateSubscriptions" uid="0f160d0c-560b-4431-b430-569972e4f923">
+    <embedded-action>e5c8a102-eb39-4b72-ad32-4eaa1b6918a6</embedded-action>
+    <embedded-action>a9586aad-96f5-4c79-b432-eceb06d33e72</embedded-action>
+    <embedded-action>78b031a1-66f9-40ad-8383-2954e8f3dacc</embedded-action>
+</loop-action>

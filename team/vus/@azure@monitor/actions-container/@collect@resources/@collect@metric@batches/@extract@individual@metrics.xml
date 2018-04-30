@@ -1,0 +1,5 @@
+<loop-action loop="${Azure_theseExtractedValues_matchNr}"
+    name="ExtractIndividualMetrics" uid="258f29f1-1ddb-47f0-ae94-8aa445c999ac">
+    <embedded-action>0a8a2986-ad63-4558-a705-f111476cc776</embedded-action>
+    <embedded-action>d0a6047f-b3be-469c-98dd-565a88bff223</embedded-action>
+</loop-action>

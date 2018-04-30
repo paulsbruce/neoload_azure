@@ -1,0 +1,6 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="Menu - Blog" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="5f7e65a9-2d75-4e4f-98f9-283da0cf7e7e" weightsEnabled="false">
+    <weighted-embedded-action uid="53927f5b-505c-48e9-b431-886d48c81d7c"/>
+</basic-logical-action-container>

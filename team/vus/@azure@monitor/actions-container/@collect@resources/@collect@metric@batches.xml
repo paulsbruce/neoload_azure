@@ -1,0 +1,7 @@
+<loop-action loop="${Azure_metrics_loopCount}"
+    name="CollectMetricBatches" uid="866dd697-4519-49ba-ac98-15d5d66685c1">
+    <embedded-action>aa5cf867-c480-4d06-96e1-b325b4b7a12e</embedded-action>
+    <embedded-action>9e9ae02b-d1ae-45b1-9b69-52b4645ab811</embedded-action>
+    <embedded-action>47751498-87bc-4030-bbfe-dc92f6e6a737</embedded-action>
+    <embedded-action>258f29f1-1ddb-47f0-ae94-8aa445c999ac</embedded-action>
+</loop-action>

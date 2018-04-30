@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=AzureLoadMonitor
+project.version=6.2
+project.original.version=6.2
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.original.version=6.4.0
+project.id=742ab893-de81-4df8-9da9-0c3fcaa652fe
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=true
+team.server.project=/paulsbruce/neoload_azure

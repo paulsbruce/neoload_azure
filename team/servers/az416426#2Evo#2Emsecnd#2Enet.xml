@@ -1,0 +1,4 @@
+<http-server hostname="az416426.vo.msecnd.net" port="443" ssl="true"
+    uid="az416426.vo.msecnd.net" urlrewriting-argument-name=""
+    urlrewriting-enabled="false" urlrewriting-path-extension="false"
+    urlrewriting-path-not-equals="false" urlrewriting-path-separator=";"/>

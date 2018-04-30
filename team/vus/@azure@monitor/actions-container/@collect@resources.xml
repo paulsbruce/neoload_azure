@@ -1,0 +1,6 @@
+<loop-action loop="${Azure_resourceIds_count}" name="CollectResources" uid="65a5b1c4-529d-4675-9623-4a06ba647825">
+    <embedded-action>2c326bee-4b1b-40b6-b777-249809ab152e</embedded-action>
+    <embedded-action>a5b547b3-6197-4c9f-83ff-a9885f080d06</embedded-action>
+    <embedded-action>b6c555bb-6bec-4613-8d30-4afbc8394cb6</embedded-action>
+    <embedded-action>866dd697-4519-49ba-ac98-15d5d66685c1</embedded-action>
+</loop-action>

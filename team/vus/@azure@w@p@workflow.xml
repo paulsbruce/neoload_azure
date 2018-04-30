@@ -1,0 +1,25 @@
+<virtual-user errorPolicy="DO_NOTHING"
+    failedAssertionPolicy="DO_NOTHING" slaProfileEnabled="false" uid="AzureWPWorkflow">
+    <init-container element-number="1" execution-type="0" pacingEnd="0"
+        pacingMode="MODE_NO_PACING" pacingStart="0" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements executed once when the Virtual User starts.</description>
+    </init-container>
+    <actions-container clearUserIterationDataMode="AUTO"
+        element-number="1" execution-type="0" pacingEnd="5"
+        pacingMode="MODE_PACING_RANGE" pacingStart="3" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements repeated until the Virtual User stops.</description>
+        <weighted-embedded-action uid="7189a161-10c1-40bd-bd10-631f17601db5"/>
+        <weighted-embedded-action uid="0e4cbd04-4114-47a1-a5ab-15cbfeac810e"/>
+        <weighted-embedded-action uid="5f7e65a9-2d75-4e4f-98f9-283da0cf7e7e"/>
+    </actions-container>
+    <end-container element-number="1" execution-type="0" pacingEnd="0"
+        pacingMode="MODE_NO_PACING" pacingStart="0" pacingValue="0"
+        slaProfileEnabled="false" weightsEnabled="false">
+        <description>Elements executed before the Virtual User stops.</description>
+    </end-container>
+    <thinktime-policy thinkTimeMode="MODE_RANGE_THINK_TIME"
+        thinktimeFactorValue="100" thinktimePolicy="1"
+        thinktimeRangeValue="50" thinktimeValue="1000"/>
+</virtual-user>

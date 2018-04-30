@@ -1,0 +1,3 @@
+<loop-action loop="${Azure_resourceIds_matchNr}" name="IterateResources" uid="6426ec72-be49-49e6-9abb-027c38dfc883">
+    <embedded-action>c16190eb-05c9-4cf5-84b6-629c310ba8e0</embedded-action>
+</loop-action>

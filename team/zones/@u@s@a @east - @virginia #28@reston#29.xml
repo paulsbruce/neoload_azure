@@ -1,0 +1,6 @@
+<zone cloudProvider="Rackspace" dnsOverrideEnabled="false"
+    latitude="38.961455" longitude="-77.362369" proxyType="NO_PROXY"
+    proxyTypeLg="COMMON" uid="USA East - Virginia (Reston)">
+    <description>USA East - Virginia (Reston)</description>
+    <embedded-action>a0051cc3-d561-4294-a760-de010ea21745</embedded-action>
+</zone>
